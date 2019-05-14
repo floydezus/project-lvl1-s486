@@ -1,6 +1,6 @@
 {
   "name": "brain-games-flz",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "bin": {
@@ -17,12 +17,13 @@
   "author": "Alexander Tokarev",
   "license": "ISC",
   "dependencies": {
-    "@babel/plugin-proposal-pipeline-operator": "^7.3.2"    
+    "@babel/plugin-proposal-pipeline-operator": "^7.3.2"
   },
   "devDependencies": {
-    "@babel/cli": "^7.2.3",
-    "@babel/core": "^7.2.2",
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
     "@babel/node": "^7.2.2",
-    "@babel/preset-env": "^7.3.1"   
-  }	
+    "@babel/preset-env": "^7.4.4",
+    "babel-cli": "^6.26.0"
+  }
 }
