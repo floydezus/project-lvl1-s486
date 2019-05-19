@@ -16,8 +16,8 @@
   },
   "author": "Alexander Tokarev",
   "license": "ISC",
-  "dependencies": {
-    "@babel/plugin-proposal-pipeline-operator": "^7.3.2"
+  "dependencies": {    
+    "readline-sync": "^1.4.9"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",

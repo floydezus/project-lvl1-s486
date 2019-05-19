@@ -1,4 +1,5 @@
-#!/usr/bin/node 
-import * as index from '..';
+#!/usr/bin/node
+import defaultExport from '..';
+
 console.log('Welcome to the Brain Games!');
-index.question();
+defaultExport();
