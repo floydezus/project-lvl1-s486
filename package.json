@@ -1,10 +1,11 @@
 {
   "name": "brain-games-flz",
-  "version": "1.1.0",
+  "version": "1.2.1",
   "description": "",
   "main": "index.js",
   "bin": {
-    "brain-games": "dist/bin/brain-games.js"
+    "brain-games": "dist/bin/brain-games.js",
+    "brain-even": "dist/bin/brain-even.js"
   },
   "files": [
     "dist"
@@ -16,7 +17,8 @@
   },
   "author": "Alexander Tokarev",
   "license": "ISC",
-  "dependencies": {    
+  "dependencies": {
+    "eslint-config-airbnb-base": "^13.1.0",
     "readline-sync": "^1.4.9"
   },
   "devDependencies": {
