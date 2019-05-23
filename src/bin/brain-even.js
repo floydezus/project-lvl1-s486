@@ -6,7 +6,7 @@ console.log('Welcome to the Brain Games!\nAnswer "yes" if number even otherwise 
 defaultExport();
 const count = 3;
 const evenGame = (step) => {
-  const num = Math.floor((Math.random() * 20) + 1); 
+  const num = Math.floor((Math.random() * 20) + 1);
   console.log(`Question:${num}`);
   const answer = readlineSync.question('Your answer:');
   const even = ((num % 2) === 0) ? 'yes' : 'no';
