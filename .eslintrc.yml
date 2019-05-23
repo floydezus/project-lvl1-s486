@@ -10,5 +10,4 @@ parserOptions:
   sourceType: module
 rules: 
   no-console: 0
-# https://github.com/babel/babel-eslint
-parser: babel-eslint  
+parser: eslint  
