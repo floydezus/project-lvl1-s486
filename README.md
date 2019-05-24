@@ -3,3 +3,10 @@
 
 # brain-even
 https://asciinema.org/a/8uaP7bNtfXj1WhSrBJreHQ2j0
+
+
+# brain-calc
+https://asciinema.org/a/UFMbsh6Hw90gST28CIamkGyjU
+
+# brain-gcd
+https://asciinema.org/a/dNir4IHhW13oQvZPahecgUcPc
