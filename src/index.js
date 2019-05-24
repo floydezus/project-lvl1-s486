@@ -5,21 +5,21 @@ const startGame = (rule, question) => {
   let step = 1;
   const title = () => {
     console.log('Welcome to the Brain Games!');
-    console.log(rule);
+    console.log(rule());
   };
   const getPlayerName = () => {
     name = readlineSync.question('May I have your name? ');
     console.log(`Hello, ${name}!`);
   };
   const setQuestion = () => {
-    console.log(`Question:${question[0]}`);
-    const answer = question[1];
+    const resFunc = question();
+    console.log(`Question:${resFunc[0]}`);
+    const answer = resFunc[1];
     const playerAnswer = readlineSync.question('Your answer:');
     // eslint-disable-next-line eqeqeq
     if (playerAnswer == answer) {
       console.log('Correct!');
       step += 1;
-      console.log(step);
       if (step > 3) {
         console.log('Congratulations!');
         return;

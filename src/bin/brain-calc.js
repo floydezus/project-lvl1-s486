@@ -28,4 +28,4 @@ const funcQuestion = () => {
   return [question, answer];
 };
 
-startGame(getRule(), funcQuestion());
+startGame(getRule, funcQuestion);
