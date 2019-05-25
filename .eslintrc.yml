@@ -11,4 +11,6 @@ parserOptions:
 rules: 
   no-console: 0
 parser: babel-eslint
-plugins: babel  
+plugins:
+# https://github.com/babel/eslint-plugin-babel
+  - babel
