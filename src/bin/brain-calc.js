@@ -1,5 +1,4 @@
 #!/usr/bin/node
-
 import startGame, { getRandomNum as rand } from '..';
 
 const getRule = () => 'What is the result of the expression?';
@@ -25,7 +24,7 @@ const funcQuestion = () => {
     default:
       break;
   }
-  return [question, answer];
+  return [question, answer.toString()];
 };
 
 startGame(getRule, funcQuestion);

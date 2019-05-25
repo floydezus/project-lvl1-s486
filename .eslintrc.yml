@@ -10,4 +10,5 @@ parserOptions:
   sourceType: module
 rules: 
   no-console: 0
-parser: eslint-config-airbnb-base  
+parser: babel-eslint
+plugins: babel  

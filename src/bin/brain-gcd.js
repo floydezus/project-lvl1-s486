@@ -13,7 +13,7 @@ const funcQuestion = () => {
   const first = rand(1, 50);
   const second = rand(1, 50);
   const question = `${first} ${second}`;
-  return [question, NOD(first, second)];
+  return [question, NOD(first, second).toString()];
 };
 
 startGame(getRule, funcQuestion);

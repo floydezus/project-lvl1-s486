@@ -16,8 +16,9 @@ const startGame = (rule, question) => {
     console.log(`Question:${resFunc[0]}`);
     const answer = resFunc[1];
     const playerAnswer = readlineSync.question('Your answer:');
-    // eslint-disable-next-line eqeqeq
-    if (playerAnswer == answer) {
+    console.log(`player otvet` + typeof playerAnswer);
+    console.log(`comp otvet` + typeof answer);
+    if (playerAnswer === answer) {
       console.log('Correct!');
       step += 1;
       if (step > 3) {

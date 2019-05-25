@@ -11,7 +11,10 @@ calc:
 	npx babel-node 'src/bin/brain-calc.js'
 
 gcd:
-	npx babel-node 'src/bin/brain-gcd.js'		
+	npx babel-node 'src/bin/brain-gcd.js'
+	
+prog:			
+	npx babel-node 'src/bin/brain-progression.js'
 
 lint:
 	npx eslint .
