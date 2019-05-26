@@ -15,9 +15,7 @@ const startGame = (rule, question) => {
     const resFunc = question();
     console.log(`Question:${resFunc[0]}`);
     const answer = resFunc[1];
-    const playerAnswer = readlineSync.question('Your answer:');
-    console.log(`player otvet` + typeof playerAnswer);
-    console.log(`comp otvet` + typeof answer);
+    const playerAnswer = readlineSync.question('Your answer:');    
     if (playerAnswer === answer) {
       console.log('Correct!');
       step += 1;
