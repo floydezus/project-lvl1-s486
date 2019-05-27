@@ -1,8 +1,7 @@
 {
   "name": "brain-games-flz",
-  "version": "2.4.0",
-  "description": "",
-  "main": "index.js",
+  "version": "2.4.1",
+  "description": "games of the brains",
   "bin": {
     "brain-games": "dist/bin/brain-games.js",
     "brain-even": "dist/bin/brain-even.js",
@@ -19,10 +18,18 @@
     "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
     "prepublishOnly": "npm run build"
   },
+  "keywords": [
+    "brain-games-flz",
+    "games",
+    "brain-games",
+    "gcd",
+    "even",
+    "prime",
+    "progression"
+  ],
   "author": "Alexander Tokarev",
   "license": "ISC",
   "dependencies": {
-    "eslint-config-airbnb-base": "^13.1.0",
     "readline-sync": "^1.4.9"
   },
   "devDependencies": {
@@ -30,6 +37,10 @@
     "@babel/core": "^7.4.4",
     "@babel/node": "^7.2.2",
     "@babel/preset-env": "^7.4.4",
-    "babel-cli": "^6.26.0"
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.3"
   }
 }
