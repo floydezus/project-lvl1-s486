@@ -1,5 +1,5 @@
 #!/usr/bin/node
 import startGame from '..';
-import { getRule, funcQuestion } from '../games/gcd-game.js';
+import { getRule, funcQuestion } from '../games/gcd-game';
 
 startGame(getRule, funcQuestion);
