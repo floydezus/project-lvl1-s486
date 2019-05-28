@@ -18,6 +18,7 @@ const startGame = (rule, question) => {
           return;
         }
         iter(step + 1);
+        return;
       }
       console.log(`${playerAnswer} is wrong answer ;(. Correct answer was ${answer}.
       Let's try again, ${name}!`);
