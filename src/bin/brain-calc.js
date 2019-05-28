@@ -1,5 +1,5 @@
 #!/usr/bin/node
 import startGame from '..';
-import { getRule, funcQuestion } from '../games/calc-game';
+import { gameDescription, getQuestionAndAnswer } from '../games/calc-game';
 
-startGame(getRule, funcQuestion);
+startGame(gameDescription, getQuestionAndAnswer);

@@ -12,11 +12,11 @@ const isPrime = (n) => {
   return true;
 };
 
-const getRule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-const funcQuestion = () => {
+const gameDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const getQuestionAndAnswer = () => {
   const question = getRandomNum(1, 50);
   const answer = (isPrime(question)) ? 'yes' : 'no';
   return [question, answer];
 };
 
-export { getRule, funcQuestion };
+export { gameDescription, getQuestionAndAnswer };

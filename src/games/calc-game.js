@@ -1,7 +1,7 @@
 import getRandomNum from '../utils';
 
-const getRule = 'What is the result of the expression?';
-const funcQuestion = () => {
+const gameDescription = 'What is the result of the expression?';
+const getQuestionAndAnswer = () => {
   const signs = ['+', '-', '*'];
   const first = getRandomNum(1, 20);
   const second = getRandomNum(1, 20);
@@ -26,4 +26,4 @@ const funcQuestion = () => {
   return [question, answer.toString()];
 };
 
-export { getRule, funcQuestion };
+export { gameDescription, getQuestionAndAnswer };

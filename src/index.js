@@ -1,31 +1,28 @@
 import readlineSync from 'readline-sync';
 
-const startGame = (rule, question) => {
-  const numStage = 3;
-  console.log(`Welcome to the Brain Games!\n${rule}`);
+const startGame = (description, getQuestion) => {
+  const stageCount = 3;
+  console.log(`Welcome to the Brain Games!\n${description}`);
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
-  const setQuestion = () => {
-    const iter = (step) => {
-      const resFunc = question();
-      console.log(`Question:${resFunc[0]}`);
-      const answer = resFunc[1];
-      const playerAnswer = readlineSync.question('Your answer:');
-      if (playerAnswer === answer) {
-        console.log('Correct!');
-        if (step === numStage) {
-          console.log('Congratulations!');
-          return;
-        }
-        iter(step + 1);
+  const iter = (step) => {
+    const resultFunction = getQuestion();
+    console.log(`Question:${resultFunction[0]}`);
+    const answer = resultFunction[1];
+    const playerAnswer = readlineSync.question('Your answer:');
+    if (playerAnswer === answer) {
+      console.log('Correct!');
+      if (step === stageCount) {
+        console.log('Congratulations!');
         return;
       }
-      console.log(`${playerAnswer} is wrong answer ;(. Correct answer was ${answer}.
+      iter(step + 1);
+      return;
+    }
+    console.log(`${playerAnswer} is wrong answer ;(. Correct answer was ${answer}.
       Let's try again, ${name}!`);
-    };
-    return iter(1);
   };
-  setQuestion();
+  return iter(1);
 };
 
 export default startGame;
