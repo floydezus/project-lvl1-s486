@@ -2,9 +2,8 @@ import getRandomNum from '../utils';
 
 const getProgression = (count, d, head) => {
   const result = [];
-  result[0] = head;
-  for (let i = 1; i < count; i += 1) {
-    result[i] = result[i - 1] + d;
+  for (let i = 0 i < count; i += 1) {
+    result[i] = head + d * i;
   }
   return result;
 };
