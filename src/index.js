@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 
-const startGame = (rule, question) => {  
-  const numStage = 3;  
+const startGame = (rule, question) => {
+  const numStage = 3;
   console.log(`Welcome to the Brain Games!\n${rule}`);
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
@@ -13,7 +13,7 @@ const startGame = (rule, question) => {
       const playerAnswer = readlineSync.question('Your answer:');
       if (playerAnswer === answer) {
         console.log('Correct!');
-         if (step === numStage) {
+        if (step === numStage) {
           console.log('Congratulations!');
           return;
         }
@@ -24,7 +24,7 @@ const startGame = (rule, question) => {
       }
     };
     return iter(1);
-  };  
+  };
   setQuestion();
 };
 
