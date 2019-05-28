@@ -1,5 +1,4 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/4a80466527da7cc3aff9/maintainability)](https://codeclimate.com/github/floydezus/project-lvl1-s486/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/4a80466527da7cc3aff9/test_coverage)](https://codeclimate.com/github/floydezus/project-lvl1-s486/test_coverage)
 
 [![Build Status](https://travis-ci.org/floydezus/project-lvl1-s486.svg?branch=master)](https://travis-ci.org/floydezus/project-lvl1-s486)
 
