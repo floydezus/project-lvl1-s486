@@ -1,7 +1,8 @@
 import readlineSync from 'readline-sync';
 
+const stageCount = 3;
+
 const startGame = (description, getQuestion) => {
-  const stageCount = 3;
   console.log(`Welcome to the Brain Games!\n${description}`);
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
@@ -18,8 +19,8 @@ const startGame = (description, getQuestion) => {
       iter(step + 1);
       return;
     }
-    console.log(`${playerAnswer} is wrong answer ;(. Correct answer was ${answer}.
-      Let's try again, ${name}!`);
+    console.log(`${playerAnswer} is wrong answer ;(. Correct answer was ${answer}.`);
+    console.log(`Let's try again, ${name}!`);
   };
   return iter(1);
 };

@@ -1,8 +1,8 @@
 {
   "name": "brain-games-flz",
-  "version": "2.4.2",
+  "version": "2.4.3",
   "description": "games of the brains",
-  "bin": {    
+  "bin": {
     "brain-even": "dist/bin/brain-even.js",
     "brain-calc": "dist/bin/brain-calc.js",
     "brain-gcd": "dist/bin/brain-gcd.js",
@@ -24,7 +24,8 @@
     "gcd",
     "even",
     "prime",
-    "progression"
+    "progression",
+    "calc"
   ],
   "author": "Alexander Tokarev",
   "license": "ISC",

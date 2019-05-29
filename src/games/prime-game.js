@@ -1,10 +1,11 @@
 import getRandomNum from '../utils';
+import startGame from '..';
 
 const isPrime = (n) => {
   if (n === 1) {
     return false;
   }
-  for (let d = 2; d * d <= n; d += 1) {
+  for (let d = 2; d <= Math.sqrt(n); d += 1) {
     if (n % d === 0) {
       return false;
     }
@@ -19,4 +20,4 @@ const getQuestionAndAnswer = () => {
   return [question, answer];
 };
 
-export { gameDescription, getQuestionAndAnswer };
+export default () => startGame(gameDescription, getQuestionAndAnswer);

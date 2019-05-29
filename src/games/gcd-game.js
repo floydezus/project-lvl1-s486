@@ -1,8 +1,9 @@
 import getRandomNum from '../utils';
+import startGame from '..';
 
-const gcd = (a, b) => {
+const findGCD = (a, b) => {
   if (b) {
-    return gcd(b, a % b);
+    return findGCD(b, a % b);
   }
   return Math.abs(a);
 };
@@ -12,7 +13,7 @@ const getQuestionAndAnswer = () => {
   const first = getRandomNum(1, 50);
   const second = getRandomNum(1, 50);
   const question = `${first} ${second}`;
-  return [question, gcd(first, second).toString()];
+  return [question, findGCD(first, second).toString()];
 };
 
-export { gameDescription, getQuestionAndAnswer };
+export default () => startGame(gameDescription, getQuestionAndAnswer);

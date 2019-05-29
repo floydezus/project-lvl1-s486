@@ -1,5 +1,4 @@
 #!/usr/bin/node
-import startGame from '..';
-import { gameDescription, getQuestionAndAnswer } from '../games/even-game';
+import startingGame from '../games/even-game';
 
-startGame(gameDescription, getQuestionAndAnswer);
+startingGame();

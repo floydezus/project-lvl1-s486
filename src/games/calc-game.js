@@ -1,4 +1,5 @@
 import getRandomNum from '../utils';
+import startGame from '..';
 
 const gameDescription = 'What is the result of the expression?';
 const getQuestionAndAnswer = () => {
@@ -26,4 +27,4 @@ const getQuestionAndAnswer = () => {
   return [question, answer.toString()];
 };
 
-export { gameDescription, getQuestionAndAnswer };
+export default () => startGame(gameDescription, getQuestionAndAnswer);
