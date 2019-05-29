@@ -13,13 +13,13 @@ Hexlet project lvl 1 "Brain games".
    Calculate the result for two numbers:
         brain-calc
 
-    The greatest common divisor for two numbers:
+   The greatest common divisor for two numbers:
         brain-gcd
 
-    What element of arithmetic progression is missing:
+   What element of arithmetic progression is missing:
         brain-progression
 
-    Is the number prime:
+   Is the number prime:
         brain-prime        
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/4a80466527da7cc3aff9/maintainability)](https://codeclimate.com/github/floydezus/project-lvl1-s486/maintainability)
