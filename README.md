@@ -1,26 +1,37 @@
 
 Hexlet project lvl 1 "Brain games".
 
-# Installation
+## Installation
 
+    ```
     npm i brain-games-flz
+    ```
 
-# Commands
+## Commands
  
-   Even number or not:    
+   Even number or not:
+   ```sh
         brain-even 
-
+   ```
    Calculate the result for two numbers:
+   ```sh     
         brain-calc
+   ```     
 
    The greatest common divisor for two numbers:
+   ```sh
         brain-gcd
+   ```     
 
    What element of arithmetic progression is missing:
+   ```sh
         brain-progression
+   ```     
 
    Is the number prime:
-        brain-prime        
+   ```sh
+        brain-prime 
+   ```     
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/4a80466527da7cc3aff9/maintainability)](https://codeclimate.com/github/floydezus/project-lvl1-s486/maintainability)
 
