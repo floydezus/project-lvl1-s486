@@ -6,9 +6,8 @@ const startGame = (description, getQuestion) => {
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
   const iter = (step) => {
-    const resultFunction = getQuestion();
-    console.log(`Question:${resultFunction[0]}`);
-    const answer = resultFunction[1];
+    const [question, answer] = getQuestion();
+    console.log(`Question:${question}`);    
     const playerAnswer = readlineSync.question('Your answer:');
     if (playerAnswer === answer) {
       console.log('Correct!');
