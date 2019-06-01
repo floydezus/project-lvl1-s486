@@ -1,6 +1,6 @@
 {
   "name": "brain-games-flz",
-  "version": "2.4.3",
+  "version": "2.4.4",
   "description": "games of the brains",
   "bin": {
     "brain-even": "dist/bin/brain-even.js",

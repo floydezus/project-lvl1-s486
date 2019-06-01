@@ -22,7 +22,7 @@ const startGame = (description, getQuestion) => {
     console.log(`${playerAnswer} is wrong answer ;(. Correct answer was ${answer}.`);
     console.log(`Let's try again, ${name}!`);
   };
-  return iter(1);
+  iter(1);
 };
 
 export default startGame;
