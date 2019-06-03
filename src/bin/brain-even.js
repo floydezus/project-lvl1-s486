@@ -1,4 +1,4 @@
 #!/usr/bin/node
-import startingGame from '../games/even-game';
+import startingGame from '../games/even';
 
 startingGame();

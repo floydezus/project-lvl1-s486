@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-const stageCount = 3;
+const stagesCount = 3;
 
 const startGame = (description, getQuestion) => {
   console.log(`Welcome to the Brain Games!\n${description}`);
@@ -12,7 +12,7 @@ const startGame = (description, getQuestion) => {
     const playerAnswer = readlineSync.question('Your answer:');
     if (playerAnswer === answer) {
       console.log('Correct!');
-      if (step === stageCount) {
+      if (step === stagesCount) {
         console.log('Congratulations!');
         return;
       }

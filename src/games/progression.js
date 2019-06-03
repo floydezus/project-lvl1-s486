@@ -15,9 +15,9 @@ const gameDescription = 'What number is missing in the progression?';
 const getQuestionAndAnswer = () => {
   const stepProgression = getRandomNumber(1, 6);
   const progression = getProgression(lengthProgression, stepProgression, 1);
-  const numberForHide = getRandomNumber(1, lengthProgression);
-  const answer = progression[numberForHide].toString();
-  progression[numberForHide] = '..';
+  const indexMissedElements = getRandomNumber(1, lengthProgression);
+  const answer = progression[indexMissedElements].toString();
+  progression[indexMissedElements] = '..';
   const question = progression.join(' ');
   return [question, answer];
 };

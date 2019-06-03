@@ -1,4 +1,4 @@
 #!/usr/bin/node
-import startingGame from '../games/progression-game';
+import startingGame from '../games/progression';
 
 startingGame();

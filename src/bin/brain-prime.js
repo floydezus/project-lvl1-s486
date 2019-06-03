@@ -1,4 +1,4 @@
 #!/usr/bin/node
-import startingGame from '../games/prime-game';
+import startingGame from '../games/prime';
 
 startingGame();

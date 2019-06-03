@@ -5,8 +5,8 @@ const isPrime = (n) => {
   if (n <= 1) {
     return false;
   }
-  for (let d = 2; d <= Math.sqrt(n); d += 1) {
-    if (n % d === 0) {
+  for (let i = 2; i <= Math.sqrt(n); i += 1) {
+    if (n % i === 0) {
       return false;
     }
   }
