@@ -3,9 +3,9 @@ Hexlet project lvl 1 "Brain games".
 
 ## Installation
 
-    ```sh
-        npm i brain-games-flz
-    ```
+  ```sh
+        npm i brain-games-flz 
+   ```
 
 ## Commands
  
